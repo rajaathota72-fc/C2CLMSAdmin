@@ -15,7 +15,7 @@ for x in col.find():
 df = pd.DataFrame(List).from_records(List)
 st.set_page_config(layout='wide',page_title="Test LMS: Code to Change Jr.",page_icon="images/favicon.png",initial_sidebar_state="expanded")
 st.markdown("<h2 style='text-align: center; color: #ffffff;background-color:#0ea2bd;border-radius:5px;'>C2C Jr : Admin Panel</h2>", unsafe_allow_html=True)
-st.image("logo.png",use_column_width=True)
+st.sidebar.image("logo.png",use_column_width=True)
 with st.sidebar.expander("Enter Login credentials"):
     username = st.text_input("Enter the Email", placeholder="Type Here")
     password = st.text_input("Enter the Password", placeholder="Type here", type="password")
